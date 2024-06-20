@@ -1,70 +1,57 @@
-# Getting Started with Create React App
+# Movie Project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+Working with APIs to make our websites interactive sits at the core of frontend web development. At the end, frontend websites work as interfaces that give us the ability to interact with data. All this data is coming from some form of an API.
 
-In the project directory, you can run:
+The API you will be interacting with is a movie API that can be used to retreive information about movies and actors. It is quite extensive and serves many purposes for your needs. In addition to that, it has quite a versatile searching mechanism that gives you the ability to reach for the information you need.
 
-### `npm start`
+## How to make use of this WIKI?
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+As you can see, the only thing you received from us is a bunch of `.md` (Markdown) files like the one you're reading now. We want you to learn to build your own projects from scratch and see how the process is done. So, we have created the following things in the wiki to help you out with the preparation:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Setup - This page contains the steps you need to setup the project. **Only one of you will do it, while the others watch and support them**
+2. Requirements - This page contains the requirements that you need to do for the project.
+3. Presentation - This page contains the requirements that you need to do when presenting.
+4. Score guide - We're introducing a new score system. This page contains the breakdown of the score.
 
-### `npm test`
+To make the best use of this Wiki, go first to the requirements, understand them, then go to the score guide, understand it, then finally head to the setup page so you can do the setup with everything in mind.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Key takeaways 🎉
 
-### `npm run build`
+If you finish this project you can be absolutely sure that you can work on any project in the future. Generally, you will be able to use the same tools and techniques you used here to build any website in the future.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Things you will practice while working on this project
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+You will be able to practice:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- Dividing tasks as components between the team and avoiding most conflict issues.
+- Using states and setters to change the state of the component.
+- Using props to pass data from one component to another.
+- Preparing folder structure in a way that makes your, and everyone elses work easier.
+- Adding new dependencies and how to use them.
+- Reading the documentation of the packages you use.
+- Reading the documentation of APIs and how to understand them.
+- Using routes to navigate between pages.
+- Using local storage to store information.
+- Using UI Kits to make styling components easier.
 
-### `npm run eject`
+#### Concerns to avoid
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+The following thoughts are traps; steer away from them:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- _`This project is huge! I don't think I'm going to be able to do it.`_ From your previous experiences, you know for a fact that everything starts big in the beginning but when you plan things and work on them they usually are not as big and scary as you thought.
+- _`I don't know how to use [insert tool here] how am I going to deal with all of this?`_ Again, don't worry. You have dealt with so many unknown things and just like you learned how to use them, you will be able to learn how to use any tool you want as long as you check its documentation.
+- _`[Right from the beginning] How am I going to fix the bonus topic?`_ DON'T GO THERE UNLESS YOU FINISH THE MAIN REQUIREMENTS FIRST!
+- _`[After spending hours on an issue to fix it without reading the documentation or searching the issue on google] I will spend extra hours on this until I fix it`_ This is a trap. You should always read the documentation and search for the solution.
+- _`I'm so tired now!!!😩 I've been trying to fix this bug for 3 hours!!!`_ In times like these, consider steping away from your computer and doing something else like playing with your pet, watching something funny, looking outside your window and enjoying cool air.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Confidence boosters
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+In times of doubts remember these:
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- _`This project will be a huge addition to my already big list of projects that will increase my future prospects of getting hired`_
+- _`The internet is FULL of resources that any one can use to learn about anything.`_
+- _`I've worked on 3 projects. They seemed difficult in the beginning but I still aced them. I'm awesome!`_
+- _`2 months ago, my biggest issues and worries are how to write the correct class name to change an HTML element's color. Now, I'm dealing with bigger things because I've learned so much more. My current worries and issues will be my HTML and CSS of my future.`_
+- _`I'm not alone on this team.`_
