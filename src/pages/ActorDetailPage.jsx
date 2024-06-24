@@ -1,7 +1,7 @@
-// src/pages/ActorDetailPage.jsx
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { getActorDetails, getActorMovies } from "../api/MovieApi";
+import { getActorDetails, getActorMovies } from "../api/api";
+import "./ActorDetailPage.css";
 
 const ActorDetailPage = () => {
   const { id } = useParams();
@@ -24,55 +24,43 @@ const ActorDetailPage = () => {
     fetchActorDetails();
   }, [id]);
 
-  if (!actor) return <div>Loading...</div>;
+  if (!actor) return <div className="loading">Loading...</div>;
 
   return (
-    <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold mb-5">{actor.name}</h1>
-      <div className="flex mb-5">
+    <div className="container">
+      <h1 className="actor-name">{actor.name}</h1>
+      <div className="actor-details">
         {actor.profile_path ? (
           <img
             src={`https://image.tmdb.org/t/p/w500${actor.profile_path}`}
             alt={actor.name}
-            className="w-48 h-72 object-cover rounded mr-4"
+            className="actor-image"
           />
         ) : (
-          <div className="w-48 h-72 bg-gray-300 flex items-center justify-center rounded mr-4">
-            <span>No Image Available</span>
-          </div>
+          <div className="no-image">No Image Available</div>
         )}
         <div>
-          <p>
-            <strong>Gender:</strong> {actor.gender === 1 ? "Female" : "Male"}
-          </p>
-          <p>
-            <strong>Popularity:</strong> {actor.popularity}
-          </p>
-          <p>
-            <strong>Birthday:</strong> {actor.birthday}
-          </p>
-          <p>
-            <strong>Biography:</strong> {actor.biography}
-          </p>
+          <p><strong>Gender:</strong> {actor.gender === 1 ? "Female" : "Male"}</p>
+          <p><strong>Popularity:</strong> {actor.popularity}</p>
+          <p><strong>Birthday:</strong> {actor.birthday}</p>
+          <p><strong>Biography:</strong> {actor.biography}</p>
         </div>
       </div>
-      <h2 className="text-2xl font-bold mb-4">Movies</h2>
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+      <h2 className="movies-title">Movies</h2>
+      <div className="movies-grid">
         {movies.map((movie) => (
-          <div key={movie.id} className="bg-white rounded shadow-lg p-4">
+          <div key={movie.id} className="movie-card">
             {movie.poster_path ? (
               <img
                 src={`https://image.tmdb.org/t/p/w500${movie.poster_path}`}
                 alt={movie.title}
-                className="w-full h-64 object-cover rounded mb-4"
+                className="movie-image"
               />
             ) : (
-              <div className="w-full h-64 bg-gray-300 flex items-center justify-center mb-4">
-                <span>No Image Available</span>
-              </div>
+              <div className="no-image">No Image Available</div>
             )}
-            <h3 className="text-xl font-bold mb-2">{movie.title}</h3>
-            <p className="text-gray-700">as {movie.character}</p>
+            <h3 className="movie-title">{movie.title}</h3>
+            <p className="movie-character">{movie.character}</p>
           </div>
         ))}
       </div>
