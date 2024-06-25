@@ -6,4 +6,6 @@ S&S Cinema is a movie website designed to provide you with the latest and greate
 
 
 We used React, pure CSS and TMApi.
+
+
  Names: Siyabonga Hlongwane and Sharon Matjila
