@@ -1,26 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import SearchBox from "./SearchBox";
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./Navbar.css"; 
+import SearchBox from "../SearchBox/SearchBox"
 
-const NavBar = () => {
+
+function Navbar() {
+  const [query, setQuery] = useState("");
+  const navigate = useNavigate();
+  
+  const handleSearch = (event) => {
+    event.preventDefault();
+    
+    if (query.trim() !== "") { 
+      navigate(`/search?query=${query}`); 
+    } 
+  };
+
   return (
-    <nav className="bg-gray-800 p-4 flex items-center justify-between">
-      <div className="flex items-center">
-        <Link to="/" className="text-white text-2xl font-bold">
-          MovieApp
-        </Link>
-      </div>
-      <SearchBox />
-      <div className="flex items-center space-x-4">
-        <Link to="/movies" className="text-white">
-          Movies
-        </Link>
-        <Link to="/actors" className="text-white">
-          Actors
-        </Link>
-      </div>
+    <nav className="navbar">
+      {}
+
+      <SearchBox/> 
+
     </nav>
   );
-};
+}
 
-export default NavBar;
+export default Navbar;
+

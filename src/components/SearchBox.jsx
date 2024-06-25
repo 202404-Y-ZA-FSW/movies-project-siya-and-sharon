@@ -6,11 +6,13 @@ const SearchBox = () => {
   const [query, setQuery] = useState("");
   const navigate = useNavigate();
 
-  const handleSearch = (e) => {
-    e.preventDefault();
-    if (query.trim()) {
-      navigate(`/search?query=${query}`);
+  const handleSearch = (event) => {
+    event.preventDefault(); 
+    
+    if (query.trim()!== "") { 
+      navigate(`/search/${query}`); 
     }
+
   };
 
   return (
@@ -20,7 +22,7 @@ const SearchBox = () => {
         placeholder="Search movies or actors..."
         value={query}
         onChange={(e) => setQuery(e.target.value)}
-        className="search-input"
+        className="search-input text-black"
       />
       <button type="submit" className="search-button">Search</button>
     </form>
@@ -28,4 +30,3 @@ const SearchBox = () => {
 };
 
 export default SearchBox;
-

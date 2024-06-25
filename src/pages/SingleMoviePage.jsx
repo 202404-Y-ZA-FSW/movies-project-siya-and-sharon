@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import axios from "axios";
+// import "./SingleMoviePage.css"
 
 const API_KEY = "97c204639834731548cd02865e77ea25";
 const API_BASEURL = "https://api.themoviedb.org/3";

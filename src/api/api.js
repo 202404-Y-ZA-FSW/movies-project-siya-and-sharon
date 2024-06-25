@@ -41,8 +41,24 @@ const searchActors = (query) =>
     params: {
       query,
     },
+    
   });
 
+
+  export const Search = async (query) => {
+    const movieSearchUrl = `${BASE_URL}/movie/?api_key=${API_KEY}&query=${query}`
+
+    const fetchMovies = async () => {
+      const response = await fetch(movieSearchUrl)
+      if(!response.ok) {
+        throw new Error("Error fetching movies")
+      }
+      // const movies = await response.json()
+
+      return response.data;
+    }
+    
+  }
 const getActorDetails = (id) => apiClient.get(`/person/${id}`);
 
 const getActorMovies = (id) => apiClient.get(`/person/${id}/movie_credits`);

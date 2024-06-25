@@ -8,6 +8,7 @@ import ActorDetailPage from "./pages/ActorDetailPage";
 import SearchBox from "./components/SearchBox";
 import Footer from "./components/Footer";
 import "./App.css";
+import SingleMoviePage from "./pages/SingleMoviePage";
 
 
 const App = () => {
@@ -22,10 +23,12 @@ const App = () => {
               <Route path="/" element={<HomePage />} />
               <Route path="/popular" element={<MoviesPage />} />
               <Route path="/movies" element={<MoviesPage />} />
+              <Route path="/movie/:id" element={<SingleMoviePage />} />
               <Route path="/actors" element={<ActorsPage />} />
               <Route path="/actor/:id" element={<ActorDetailPage />} />
-              <Route path="/search" element={<MoviesPage />} />
+              <Route path="/search/:query" element={<MoviesPage />} />
             </Routes>
+            <Footer/>
           </div>
         </div>
       </div>
