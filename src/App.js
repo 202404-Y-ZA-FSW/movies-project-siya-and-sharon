@@ -6,7 +6,9 @@ import MoviesPage from "./pages/MoviesPage";
 import ActorsPage from "./pages/ActorsPage";
 import ActorDetailPage from "./pages/ActorDetailPage";
 import SearchBox from "./components/SearchBox";
+import Footer from "./components/Footer";
 import "./App.css";
+
 
 const App = () => {
   return (

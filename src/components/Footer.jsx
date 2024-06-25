@@ -100,7 +100,7 @@ const App = () => {
   return (
     <div style={pageContainerStyle}>
       <div style={contentStyle}>
-        {/* Your main content goes here */}
+        {}
       </div>
       <Footer />
     </div>
