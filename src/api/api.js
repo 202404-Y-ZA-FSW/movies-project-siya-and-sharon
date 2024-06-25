@@ -53,7 +53,7 @@ const searchActors = (query) =>
       if(!response.ok) {
         throw new Error("Error fetching movies")
       }
-      // const movies = await response.json()
+       const movies = await response.json()
 
       return response.data;
     }
