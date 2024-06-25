@@ -3,3 +3,7 @@ S&S Cinema is a movie website designed to provide you with the latest and greate
 
 #movie ![Screenshot 2024-06-24 165011](https://github.com/202404-Y-ZA-FSW/movies-project-siya-and-sharon/assets/147420311/8bb97a7d-7e6c-43da-8a5d-965ae5bd3f4d)
 ![Screenshot 2024-06-24 153412](https://github.com/202404-Y-ZA-FSW/movies-project-siya-and-sharon/assets/147420311/9c1d9bd2-e3a6-4a9f-8e4b-ec9c318bce58)
+
+
+We used React, pure CSS and TMApi.
+ Names: Siyabonga Hlongwane and Sharon Matjila
